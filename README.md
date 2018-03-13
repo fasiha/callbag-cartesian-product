@@ -2,6 +2,8 @@
 
 Callbag factory that converts any number of pullable source into a single pullable source that emits the Cartesian product of the sources. This is unlikely to work correctly for listenable sources.
 
+This is just a very thin wrapper around [`callbag-flatten`](https://github.com/staltz/callbag-flatten), whose README shows the basic pattern of calling `map` inside `map`, and then `flatten`ing. Callbags allow us to have nice memory efficiency with extreme flexibility and composability.
+
 ## Installation
 In a Node.js project, run
 ```
