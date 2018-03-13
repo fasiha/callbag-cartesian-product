@@ -1,5 +1,5 @@
 const test = require('tape');
-const { pipe, fromIter, concat, filter, map, forEach } = require('callbag-basics');
+const { pipe, interval, take, fromIter, concat, filter, map, forEach } = require('callbag-basics');
 
 const { cartesian, cartesian2, cartesian3, cartesian4, cartesian5 } = require('./index');
 const array1 = Array.from(Array(49), (_, i) => '' + i);
