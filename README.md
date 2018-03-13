@@ -4,6 +4,8 @@ Callbag factory that converts any number of pullable source into a single pullab
 
 This is just a very thin wrapper around [`callbag-flatten`](https://github.com/staltz/callbag-flatten), whose README shows the basic pattern of calling `map` inside `map`, and then `flatten`ing. Callbags allow us to have nice memory efficiency with extreme flexibility and composability.
 
+Recursively creating Cartesian callbags from Cartesian callbags, using this simple library, is not very ergonomic—you might get unexpected nesting. In those situations, just grab @avinashcodes' [`callbag-flat-map`](https://github.com/avinashcodes/callbag-flat-map), which gives you full control over combining Cartesian callbags with other callbags.
+
 ## Installation
 In a Node.js project, run
 ```
