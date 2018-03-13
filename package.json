@@ -1,0 +1,34 @@
+{
+  "name": "callbag-cartesian-product",
+  "version": "1.0.0",
+  "description": "Callbag factory that yields the Cartesian product (all combinations) of source callbags",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests.js"
+  },
+  "keywords": [
+    "callbag",
+    "cartesian",
+    "product",
+    "combination",
+    "permutation"
+  ],
+  "author": "Ahmed Fasih",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fasiha/callbag-cartesian-product.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fasiha/callbag-cartesian-product/issues"
+  },
+  "homepage": "https://github.com/fasiha/callbag-cartesian-product#readme",
+  "license": "Unlicense",
+  "devDependencies": {
+    "callbag-basics": "^2.0.1",
+    "tape": "^4.9.0"
+  },
+  "dependencies": {
+    "callbag-flatten": "^1.0.0",
+    "callbag-map": "^1.0.1"
+  }
+}
