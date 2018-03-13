@@ -9,10 +9,12 @@ function cartesian(...args) {
   }
   return bag;
 }
+function cartesianF(...args) { return map(arr => arr.reverse())(cartesian(...args.slice().reverse())); }
 
 // function cartesianIter(...args) { return cartesian(...args.map(fromIter)); }
 
 module.exports = {
   cartesian,
+  cartesianF,
   // cartesianIter,
 };
