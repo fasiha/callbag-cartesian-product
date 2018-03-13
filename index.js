@@ -11,4 +11,4 @@ function cartesian(fOrder, ...args) {
       (bag, b) => flatten(map(outer => map(inner => [inner].concat(outer))(b))(bag)), map(x => [x])(args.pop()));
 }
 
-module.exports = { cartesian };
+module.exports = cartesian;

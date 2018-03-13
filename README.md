@@ -14,7 +14,7 @@ $ npm install --save callbag-cartesian-project
 ### `cartesian([fortranOrder,] ...sources)`
 Optional boolean `fortranOrder` (defaults to true) switches between Fortran ordering (first source alternates the fastest) and C ordering (first source changes the slowest). Compare the default Fortran ordering:
 ```js
-const {cartesian} = require('callbag-cartesian-product');
+const cartesian = require('callbag-cartesian-product');
 const { pipe, fromIter, forEach } = require('callbag-basics'); // from `npm i callbag-basics`
 pipe(
     cartesian(fromIter([ 0, 1, 2 ]), fromIter('rgb'), fromIter([ true, false ])),

@@ -1,7 +1,8 @@
 const test = require('tape');
 const { pipe, interval, take, fromIter, concat, filter, map, forEach } = require('callbag-basics');
 
-const { cartesian, cartesian2, cartesian3, cartesian4, cartesian5 } = require('./index');
+const cartesian = require('./index');
+
 const array1 = Array.from(Array(49), (_, i) => '' + i);
 const array2 = 'abcdefghi';
 const array3 = Array.from(Array(51), _ => '' + Math.random());

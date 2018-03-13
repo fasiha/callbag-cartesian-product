@@ -1,6 +1,6 @@
 {
   "name": "callbag-cartesian-product",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Callbag factory that yields the Cartesian product (all combinations) of source callbags",
   "main": "index.js",
   "scripts": {
